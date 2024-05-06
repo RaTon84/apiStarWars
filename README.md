@@ -19,15 +19,13 @@ Uso Record lanzado oficialmente en Java 16, pero disponible desde Java 14 de for
 
 ### machetes langs:
 >[!NOTE]
-La clase File
-La clase File representa un archivo o directorio en el sistema de archivos de la computadora, lo que le permite crear, eliminar, listar y manipular archivos y directorios. Para crear un objeto File, debe pasar la ruta del archivo o directorio como argumento al constructor. Por ejemplo:
+La clase **File** representa un archivo o directorio en el sistema de archivos de la computadora, lo que le permite crear, eliminar, listar y manipular archivos y directorios. Para crear un objeto File, debe pasar la ruta del archivo o directorio como argumento al constructor. Por ejemplo:
 >´File file = new File("C:\\miArchivo.txt");´
 >En el código anterior se creó un objeto File que apunta al archivo "miArchivo.txt" ubicado en la raíz del disco C:.
 La clase File tiene varios métodos útiles para interactuar con archivos y directorios, como exists(), canRead(), canWrite(), isDirectory(), isFile(), mkdir() y delete().
 
 >[!TIP]
-La clase FileReader y FileWriter
-Las clases FileReader y FileWriter se utilizan para leer y escribir datos en archivos de texto; la clase FileReader lee caracteres de un archivo de texto, mientras que la clase FileWriter escribe los caracteres.
+Las clases **FileReader y FileWriter** se utilizan para leer y escribir datos en archivos de texto; la clase FileReader lee caracteres de un archivo de texto, mientras que la clase FileWriter escribe los caracteres.
 Para usar la clase FileReader, necesita crear un objeto FileReader pasando un objeto File como argumento, que contenga la ruta del archivo que quieres leer. Luego puede leer los datos del archivo usando el método read() o read(char[]). Por ejemplo:
 File file = new File("C:\\miArchivo.txt");
 FileReader reader = new FileReader(file);
@@ -38,7 +36,7 @@ while (data != -1) {
 }
 reader.close();
 En el código anterior se lee el contenido del archivo "miArchivo.txt" y se imprime su contenido en la consola.
-La clase FileWriter sigue el mismo proceso, pero haciendo lo contrario, es decir, escribiendo caracteres en el archivo. Por ejemplo:
+La clase **FileWriter** sigue el mismo proceso, pero haciendo lo contrario, es decir, escribiendo caracteres en el archivo. Por ejemplo:
 File file = new File("C:\\salida.txt");
 FileWriter writer = new FileWriter(file);
 writer.write("Hola mundo!");
@@ -50,7 +48,7 @@ FileInputStream y FileOutputStream: se utilizan para leer y escribir datos binar
 ObjectInputStream y ObjectOutputStream: se utilizan para leer y escribir objetos en archivos. Esto le permite almacenar objetos Java en archivos para su uso posterior o para transferirlos entre diferentes aplicaciones.
 
 >[!IMPORTANT]
-Después de descargar el archivo Gson, es hora de agregar esa biblioteca a nuestro proyecto. En IntelliJ, clica en los tres puntitos de la esquina superior izquierda (si es que estan utilizando la version nueva de la interfaz de IntelliJ).
+Después de descargar el archivo **Gson**, es hora de agregar esa biblioteca a nuestro proyecto. En IntelliJ, clica en los tres puntitos de la esquina superior izquierda (si es que estan utilizando la version nueva de la interfaz de IntelliJ).
 Clica en File > Project Structure.
 En Project Structure, navegue hasta Modules > Dependencies, clique en + y seleccione la opción “JARs or Directories…”
 Se abrirá una nueva ventana para seleccionar el archivo .jar. Seleccione el lugar donde está el Gson.
